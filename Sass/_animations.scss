@@ -1,0 +1,66 @@
+
+@keyframes movdots {
+    
+    100%{  
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shadowing{
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .navbar{
+        justify-content: space-between;
+        width: 80%; 
+    
+        &__list {
+            display: none;
+        }
+    }
+
+    .first-part{
+        &__content{
+            width: 80%;
+        }
+    }
+
+    .second-part{
+        .article{
+            display: block;
+            text-align: left;
+            &__text{
+                width: 100%;
+            }
+        }
+    }
+    
+
+    .footer__container{
+        display: block;
+        text-align: center;
+    }
+
+    .footer__middle{
+        margin-top: 5%;
+    } 
+}
+
+
+
+@media only screen and (min-width:768px) {
+    .lines-container {
+        display: none;
+    }
+}
